@@ -51,7 +51,7 @@ const Navbar = () => {
           <a href="#">
             < AiOutlineFundProjectionScreen/>
             <span className="nav-text">{isExpanded && "  TV"}</span>
-         
+         </a>
         </li>
         <li>
           <a href="#">
