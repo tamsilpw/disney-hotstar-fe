@@ -28,7 +28,7 @@ function Row({ id, title, fetchUrl, isLargeRow, setDesmovies, numberOfTiles }) {
 
     // console.log(movies);
 
-    if (numberOfTiles == null | numberOfTiles == 0) {
+    if (numberOfTiles == null || numberOfTiles == 0) {
         numberOfTiles = Math.min(15, movies.length)
     }
 
