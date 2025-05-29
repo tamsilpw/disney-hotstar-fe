@@ -21,7 +21,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`navbar ${isExpanded ? "expanded" : ""}`}
+      className={`navbar ${isExpanded ? "expanded" : }`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -51,7 +51,7 @@ const Navbar = () => {
           <a href="#">
             < AiOutlineFundProjectionScreen/>
             <span className="nav-text">{isExpanded && "  TV"}</span>
-          </a>
+         </a>
         </li>
         <li>
           <a href="#">

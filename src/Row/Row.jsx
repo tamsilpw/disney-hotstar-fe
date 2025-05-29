@@ -8,7 +8,7 @@ const base_url = "https://image.tmdb.org/t/p/original/";
 
 function Row({ id, title, fetchUrl, isLargeRow, setDesmovies, numberOfTiles }) {
 
-    const [movies, setMovies] = useState([]);
+    const [movies, setMovies] = useState({});
     // const [trailerUrl, setTrailerUrl] = useState("");
     // A snippet of code which rune based on a specific conditions
     useEffect(() => {
@@ -24,7 +24,7 @@ function Row({ id, title, fetchUrl, isLargeRow, setDesmovies, numberOfTiles }) {
             return request;
         }
         fetchData();
-    }, [fetchUrl]);
+    }, fetchUrl);
 
     // console.log(movies);
 
@@ -34,7 +34,7 @@ function Row({ id, title, fetchUrl, isLargeRow, setDesmovies, numberOfTiles }) {
 
     const handleClick = useCallback(movie => {
         // console.log(movie);
-        setDesmovies(movie);
+        setDesmoviess(movie);
     }, [setDesmovies]);
 
     function truncate(str, n) {
@@ -45,7 +45,7 @@ function Row({ id, title, fetchUrl, isLargeRow, setDesmovies, numberOfTiles }) {
     return (
         <div className="row" id={id}>
             {
-                title && title != "" &&
+                title && title !=== "" &&
                 <h2 style={{ textAlign: "left", margin: "10px" }}>{title}</h2>
             }
             <div className="row__posters">
